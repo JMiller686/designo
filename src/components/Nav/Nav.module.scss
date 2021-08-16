@@ -1,20 +1,4 @@
-@import '../../assets/scss/base.scss';
-
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .logoWrap {
-        img {
-            display: block;
-            max-height: 27px;
-            max-width: 202px;
-            height: 100%;
-            width: 100%;
-        }
-    }
-
     .navLinks {
         display: flex;
         margin: 0;
@@ -26,7 +10,6 @@
             line-height: 1;
 
             a {
-                color: $grey;
                 text-decoration: none;
                 font-size: 1.4rem;
 
