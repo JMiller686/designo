@@ -1,6 +1,5 @@
 import HeaderStyles from './Header.module.scss';
 
-
 import Container from 'react-bootstrap/Container';
 
 import Logo from '../Logo/Logo';
