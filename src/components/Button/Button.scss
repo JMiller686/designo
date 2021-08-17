@@ -1,0 +1,29 @@
+@import '../../assets/scss/base.scss';
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 1.7rem 1.7375rem;
+    border: 0;
+    border-radius: 1rem;
+
+    &.btn-light {
+        background: $white;
+
+        &:hover {
+            background: $lightPeach;
+            color: $white;
+        }
+    }
+
+    &.btn-dark {
+        background: $peach;
+        color: $white;
+
+        &:hover {
+            background: $lightPeach;
+        }
+    }
+}
