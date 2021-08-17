@@ -1,0 +1,44 @@
+.nav {
+    .navLinks {
+        display: flex;
+        margin: 0;
+    
+        li {
+            list-style: none;
+            margin: 0 1rem;
+            padding: 0 1rem;
+            line-height: 1;
+            letter-spacing: 2px;
+
+            a {
+                text-decoration: none;
+                font-size: 1.4rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+                padding-right: 0;
+            }
+        }
+
+        @media(max-width: 767px) {
+            display: block;
+            text-align: center;
+            padding: 0;
+
+            li {
+                margin: 0 0 3.2rem 0;
+                padding: 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
