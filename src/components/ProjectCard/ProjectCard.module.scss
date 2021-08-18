@@ -1,0 +1,45 @@
+@import '../../assets/scss/base.scss';
+
+.projectCard {
+    border-radius: 1.5rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    .projectCardImg {
+        @media(min-width:767px) and (max-width: 992px) {
+            width: 50%;
+        }
+
+         img {
+            width: 100%;
+         }
+    }
+
+    .projectCardContent {
+        background: #fdf3f0;
+        padding: 3.2rem;
+        text-align: center;
+
+        .title {
+            color: $peach;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            letter-spacing: 5px;
+            margin-bottom: 1.6rem;
+            text-transform: uppercase;
+        }
+
+        @media(min-width:767px) and (max-width: 992px) {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    @media(min-width:767px) and (max-width: 992px)  {
+        display: flex;
+    }
+}

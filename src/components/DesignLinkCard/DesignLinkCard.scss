@@ -1,0 +1,149 @@
+@import '../../assets/scss/base.scss';
+
+.design-card {
+    overflow: hidden;
+    border-radius: 1.5rem;
+    color: #fff;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: all 1s;
+    font-family: Jost, Arial, sans-serif;
+
+    &.large {
+        padding: 27.3rem 0;
+
+        @media(max-width: 991px) {
+            padding: 5.3rem 0;
+        }
+
+        @media(max-width: 767px) {
+            padding: 9rem 0;
+        }
+
+        &.web {
+            background-image: url(../../assets/home/desktop/image-web-design-large.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @media(max-width: 991px) {
+                background-image: url(../../assets/home/tablet/image-web-design.jpg)
+            }
+    
+            @media(max-width: 767px) {
+                background-image: url(../../assets/home/mobile/image-web-design.jpg);
+            }
+        }
+    }
+
+    &.small {
+        padding: 10.7rem 0;
+
+        @media(max-width: 991px) {
+            padding: 5.3rem 0;
+        }
+
+        @media(max-width: 767px) {
+            padding: 9rem 0;
+        }
+
+        &.web {
+            background-image: url(../../assets/home/desktop/image-web-design-small.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @media(max-width: 991px) {
+                background-image: url(../../assets/home/tablet/image-web-design.jpg)
+            }
+    
+            @media(max-width: 767px) {
+                background-image: url(../../assets/home/mobile/image-web-design.jpg);
+            }
+        }
+
+        &.app {
+            background-image: url(../../assets/home/desktop/image-app-design.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @media(max-width: 991px) {
+                background-image: url(../../assets/home/tablet/image-app-design.jpg)
+            }
+    
+            @media(max-width: 767px) {
+                background-image: url(../../assets/home/mobile/image-app-design.jpg);
+            }
+        }
+    
+        &.graphic {
+            background-image: url(../../assets/home/desktop/image-graphic-design.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            @media(max-width: 991px) {
+                background-image: url(../../assets/home/tablet/image-graphic-design.jpg)
+            }
+    
+            @media(max-width: 767px) {
+                background-image: url(../../assets/home/mobile/image-graphic-design.jpg);
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 2.4rem;
+
+        @media(max-width: 767px) {
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+            letter-spacing: 1.4px;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .arrow {
+            display: block;
+            margin-left: 2.1rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        transform: all 1s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+        color: $white;
+        box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.25); 
+
+        &:after {
+            background-color: rgb(231,129,107, 0.75);
+        }
+    }
+
+    .design-card-content {
+        z-index: 5;
+    }
+}
+

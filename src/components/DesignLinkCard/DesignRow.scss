@@ -1,0 +1,43 @@
+.design-row {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2.4rem;
+
+    @media(max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &.web-page {
+        .app {
+            grid-column: 1/2;
+        }
+
+        .graphic {
+            grid-column: 2/3;
+        }
+    }
+
+    &.app-page {
+        .app {
+            grid-column: 1/2;
+        }
+
+        .graphic {
+            grid-column: 2/3;
+        }
+    }
+
+    &.graphic-page {
+        .app {
+            grid-column: 1/2;
+        }
+
+        .graphic {
+            grid-column: 2/3;
+        }
+    }
+}
