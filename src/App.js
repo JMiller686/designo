@@ -9,6 +9,8 @@ import {
   Route
 } from 'react-router-dom'
 
+import ScrollToTop from './components/HOC/ScrollToTop';
+
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -25,16 +27,17 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header/>
-        
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/our-company" component={OurCompany} />
-          <Route exact path="/locations" component={Locations} />
-          <Route exact path="/contact" component={Contact} />
-          <Route path="/app-design" component={AppDesign} />
-          <Route path="/graphic-design" component={GraphicDesign} />
-          <Route path="/web-design" component={WebDesign} />
-        </Switch>
+
+        <ScrollToTop />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/our-company" component={OurCompany} />
+            <Route exact path="/locations" component={Locations} />
+            <Route exact path="/contact" component={Contact} />
+            <Route path="/app-design" component={AppDesign} />
+            <Route path="/graphic-design" component={GraphicDesign} />
+            <Route path="/web-design" component={WebDesign} />
+          </Switch>
 
         <Footer />
       </div>

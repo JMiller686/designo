@@ -1,8 +1,20 @@
+import { Container } from "react-bootstrap";
+import DesignGridHome from "../../components/DesignLinkCard/DesignGridHome";
+
+
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+        <Container>
+            <div>
+                <h1>Home</h1>
+
+                <section>
+                    <DesignGridHome />
+                </section>
+                
+            </div>
+        </Container>
+        
     )
 }
 

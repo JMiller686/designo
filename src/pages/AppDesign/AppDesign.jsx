@@ -3,6 +3,9 @@ import { Container } from "react-bootstrap";
 import ProjectCardWrap from "../../components/ProjectCard/ProjectCardWrap";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
+import DesignRow from "../../components/DesignLinkCard/DesignRow";
+import DesignLinkCard from '../../components/DesignLinkCard/DesignLinkCard';
+
 import AirFilter from '../../assets/app-design/desktop/image-airfilter.jpg';
 import EyeCam from '../../assets/app-design/desktop/image-eyecam.jpg';
 import FaceIt from '../../assets/app-design/desktop/image-faceit.jpg';
@@ -41,6 +44,23 @@ const AppDesign = () => (
                         imgUrl={LoopStudios}
                     />
                 </ProjectCardWrap>
+            </section>
+
+            <section>
+                <DesignRow page="app-page">
+                    <DesignLinkCard
+                        cardName='web'
+                        title="Web Design"
+                        linkUrl="/web-design"
+                        size="small"
+                    />
+                    <DesignLinkCard 
+                        cardName='graphic'
+                        title="Graphic Design"
+                        linkUrl="/graphic-design"
+                        size="small"
+                    />
+                </DesignRow>
             </section>
         </div>
     </Container>

@@ -3,6 +3,9 @@ import { Container } from "react-bootstrap";
 import ProjectCardWrap from "../../components/ProjectCard/ProjectCardWrap";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
+import DesignRow from "../../components/DesignLinkCard/DesignRow";
+import DesignLinkCard from '../../components/DesignLinkCard/DesignLinkCard';
+
 import Express from '../../assets/web-design/desktop/image-express.jpg';
 import Transfer from '../../assets/web-design/desktop/image-transfer.jpg';
 import Photon from '../../assets/web-design/desktop/image-photon.jpg';
@@ -48,6 +51,23 @@ const WebDesign = () => {
                             imgUrl={Camp}
                         />
                     </ProjectCardWrap>
+                </section>
+
+                <section>
+                    <DesignRow page="web-page">
+                        <DesignLinkCard
+                            cardName='app'
+                            title="App Design"
+                            linkUrl="/app-design"
+                            size="small"
+                        />
+                        <DesignLinkCard 
+                            cardName='graphic'
+                            title="Graphic Design"
+                            linkUrl="/graphic-design"
+                            size="small"
+                        />
+                    </DesignRow>
                 </section>
             </div>
         </Container>

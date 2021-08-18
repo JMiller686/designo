@@ -3,6 +3,9 @@ import { Container } from "react-bootstrap";
 import ProjectCardWrap from "../../components/ProjectCard/ProjectCardWrap";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
+import DesignRow from "../../components/DesignLinkCard/DesignRow";
+import DesignLinkCard from '../../components/DesignLinkCard/DesignLinkCard';
+
 import TimBrown from '../../assets/graphic-design/desktop/image-change.jpg';
 import BoxedWater from '../../assets/graphic-design/desktop/image-boxed-water.jpg';
 import Science from '../../assets/graphic-design/desktop/image-science.jpg';
@@ -30,6 +33,23 @@ const GraphicDesign = () => {
                             imgUrl={Science}
                         />
                     </ProjectCardWrap>
+                </section>
+
+                <section>
+                    <DesignRow page="graphic-page">
+                        <DesignLinkCard
+                            cardName='app'
+                            title="App Design"
+                            linkUrl="/app-design"
+                            size="small"
+                        />
+                        <DesignLinkCard
+                            cardName='web'
+                            title="Web Design"
+                            linkUrl="/web-design"
+                            size="small"
+                        />
+                    </DesignRow>
                 </section>
             </div>
         </Container>
