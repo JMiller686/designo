@@ -1,10 +1,10 @@
 import ProjectCardStyles from './ProjectCard.module.scss';
 
-const ProjectCard = ({imgUrl, imgAlt, title, description}) => {
+const ProjectCard = ({imgUrl, title, description}) => {
     return (
         <div className={ProjectCardStyles.projectCard}>
             <div className={ProjectCardStyles.projectCardImg}>
-                <img src={imgUrl} alt={imgAlt} />
+                <img src={imgUrl} alt={title} />
             </div>
             <div className={ProjectCardStyles.projectCardContent}>
                 <p className={ProjectCardStyles.title}>{title}</p>

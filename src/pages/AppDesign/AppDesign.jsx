@@ -19,31 +19,26 @@ const AppDesign = () => (
                         title="Airfilter"
                         description="Solving the problem of poor indoor air quality by filtering the air"
                         imgUrl={AirFilter}
-                        altText="Airfilter"
                     />
                     <ProjectCard 
                         title="Eyecam"
                         description="Product that lets you edit your favorite photos and videos at any time"
                         imgUrl={EyeCam}
-                        altText="Eyecam"
                     />
                     <ProjectCard 
                         title="Faceit"
                         description="Get to meet your favorite internet superstar with the faceit app"
                         imgUrl={FaceIt}
-                        altText="Faceit"
                     />
                     <ProjectCard 
                         title="Todo"
                         description="A todo app that features cloud sync with light and dark mode"
                         imgUrl={Todo}
-                        altText="Todo"
                     />
                     <ProjectCard 
                         title="LoopStudios"
                         description="A VR experience app made for Loopstudios"
                         imgUrl={LoopStudios}
-                        altText="LoopStudios"
                     />
                 </ProjectCardWrap>
             </section>
